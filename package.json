@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "body-parser": "^1.18.3",
     "concurrently": "^3.5.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
     "express-session": "^1.15.6",
+    "nodemon": "^1.17.5",
     "react": "^16.2.0",
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.2.0",
@@ -12,7 +16,7 @@
     "react-scripts": "1.1.1"
   },
   "scripts": {
-    "start": "concurrently \"node server\" \"react-scripts start\"",
+    "start": "concurrently \"nodemon server\" \"react-scripts start\"",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"

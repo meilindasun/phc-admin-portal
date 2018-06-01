@@ -1,0 +1,13 @@
+.service-name {
+  top: 8px;
+}
+
+.new-service {
+  margin: 0 auto;
+  max-width: 320px;
+}
+
+.error-msg {
+  color: red;
+  margin-top: 10px;
+}

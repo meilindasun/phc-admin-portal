@@ -1,30 +1,9 @@
-const RECEIVED_NOT_RECEIVED = 'Received / Not received'
-
-export default {
-  'sections': [
-    {
-      'sectionName': 'services',
-      'sectionFields': [
-        {
-          'name': 'Acupuncture__c',
-          'type': RECEIVED_NOT_RECEIVED,
-        },
-        {
-          'name': 'Pet_Sitting__c',
-          'type': RECEIVED_NOT_RECEIVED,
-        },
-        {
-          'name': 'Youth_Services__c',
-          'type': RECEIVED_NOT_RECEIVED,
-        },
-        {
-
-        }
-      ],
-    },
-    {
-      'sectionName': 'questions',
-      'sectionFields'
-    }
+module.exports = {
+  'services': [
+    'Acupuncture__c',
+    'Pet_sitting__c',
+    'Medical_care__c',
+    'Eye_exam__c',
+    'Footcare__c'
   ]
 }

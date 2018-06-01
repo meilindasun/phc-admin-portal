@@ -23,16 +23,16 @@ export default class Login extends Component {
   }
 
   handleSubmit = event => {
-    event.preventDefault();
+    event.preventDefault()
     fetch('/api/login', {
       method: 'POST',
       body: JSON.stringify({
-        'username': this.state.username,
-        'password': this.state.password,
+        'password': this.state.password
       }),
       headers: {
         'content-type': 'application/json',
-      }
+      },
+      credentials: 'include'
     })
     .then(res => res.json())
     .catch(error => {
@@ -40,7 +40,7 @@ export default class Login extends Component {
       this.setState({loginFailed: true});
     })
     .then(data => {
-      if (data.loginSuccess === true) window.history.push('/portal');
+      if (data.loginSuccess === true) window.location = '/portal'
       else this.setState({loginFailed: true});
     });
   }
@@ -59,7 +59,7 @@ export default class Login extends Component {
           </FormGroup>
           <Button
             block
-            bsSize="medium"
+            bsSize="small"
             disabled={!this.validateForm()}
             type="submit"
           >
